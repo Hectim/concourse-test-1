@@ -10,4 +10,5 @@ run:
   args:
     - -c
     - |
-      time | echo "repo updated"
+      echo "repo updated"
+      time

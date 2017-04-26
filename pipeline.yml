@@ -18,7 +18,6 @@ jobs:
   - task: set-pipeline
     file: concourse-test-1/set-pipeline.yml
 
-
 - name: hello-world
   plan:
   - get: concourse-test-2
