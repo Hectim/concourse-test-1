@@ -3,16 +3,15 @@ resources:
 - name: concourse-test-1
   type: git
   source:
-    uri: https://github.com/gunn4r/concourse-test-1.git
+    uri: https://github.com/Hectim/concourse-test-1.git
 
 - name: concourse-test-2
   type: git
   source:
-    uri: https://github.com/gunn4r/concourse-test-2.git
+    uri: https://github.com/Hectim/concourse-test-2.git
 
 jobs:
 - name: set-pipeline
-  serial: true
   plan:
   - get: concourse-test-1
     trigger: true
@@ -21,7 +20,6 @@ jobs:
 
 
 - name: hello-world
-  serial: true
   plan:
   - get: concourse-test-2
     trigger: true

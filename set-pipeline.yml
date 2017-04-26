@@ -6,5 +6,8 @@ image_resource:
   source: {repository: busybox}
 
 run:
-  path: echo
-  args: [hello world]
+  path: /bin/bash
+  args:
+    - -c
+    - |
+      time | echo "repo updated"
