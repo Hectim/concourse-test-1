@@ -15,6 +15,7 @@ run:
   args:
     - -c
     - |
+      pwd
+      tree
       npm install
       npm run test
-      #path: operator/scripts/test
