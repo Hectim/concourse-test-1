@@ -15,8 +15,6 @@ run:
   args:
     - -c
     - |
-      P=$pwd
-      echo $P
-      ls
+      cd operator
       npm install
       npm run test
