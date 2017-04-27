@@ -15,7 +15,8 @@ run:
   args:
     - -c
     - |
-      pwd
-      tree
+      P=$pwd
+      echo $P
+      ls
       npm install
       npm run test
