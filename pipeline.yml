@@ -24,3 +24,10 @@ jobs:
     trigger: true
   - task: output-hello-world
     file: concourse-test-2/hello-world-test.yml
+
+- name: test-box
+  plan:
+  - get: concourse-test-1
+    trigger: true
+  - task: run-tests
+    file: concourse-test-1/run-test.yml
