@@ -1,0 +1,20 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "Tool for creating new projects at TCN.",
+  "scripts": {
+    "test": "scripts/test"
+  },
+  "author": "TCN",
+  "license": "UNLICENSED",
+  "preferGlobal": true,
+  "bin": {
+    "tcn-dev": "./index.js"
+  },
+  "dependencies": {
+    "yargs": "^4.7.1"
+  },
+  "publishConfig": {
+    "registry": "https://artifactory.tcncloud.net/artifactory/api/npm/npm-local"
+  }
+}

@@ -11,4 +11,10 @@ inputs:
 - name: operator
 
 run:
-  path: operator/scripts/test
+  path: /bin/bash
+  args:
+    - -c
+    - |
+      npm install
+      npm run test
+      #path: operator/scripts/test
