@@ -10,6 +10,9 @@ image_resource:
 inputs:
 - name: operator
 
+outputs:
+- name: operator
+
 run:
   path: /bin/bash
   args:
@@ -18,3 +21,6 @@ run:
       cd operator
       npm install
       npm run test
+      ls
+      cd node_modules
+      ls
